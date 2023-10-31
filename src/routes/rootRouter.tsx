@@ -11,6 +11,8 @@ import Register from "src/pages/client/Register";
 import Cart from "src/pages/client/Cart";
 import DefaultLayout from "src/layouts/DefaultLayout";
 import CheckOut from "src/pages/client/Checkout/Checkout";
+import ManageTour from "src/pages/client/ManageTour/ManageTour";
+import ManageLayout from "src/layouts/manage/ManageLayout";
 
 const rootRouter: RouteObject[] = [
   {
@@ -83,6 +85,14 @@ const rootRouter: RouteObject[] = [
       <EnterpriseLayoutLogIned>
         <Analysis />
       </EnterpriseLayoutLogIned>
+    )
+  },
+  {
+    path: PATH.manage,
+    element: (
+      <ManageLayout>
+        <ManageTour />
+      </ManageLayout>
     )
   }
 ];

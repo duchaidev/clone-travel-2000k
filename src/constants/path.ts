@@ -7,7 +7,8 @@ const PATH = {
   productDetail: "/productdetail",
   notFound: "/*",
   cart: "/cart",
-  checkout: "/checkout"
+  checkout: "/checkout",
+  manage: "/manage",
 };
 
 export default PATH;

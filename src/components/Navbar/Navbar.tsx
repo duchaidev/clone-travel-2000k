@@ -6,7 +6,7 @@ import NavMenu from "./NavMenu";
 
 function Navbar() {
   return (
-    <nav className="bg-blur-top w-full py-3">
+    <nav className="w-full py-3 bg-blur-top">
       <Container>
         <Row align={"middle"}>
           <Col xs={16} md={12}>
@@ -14,7 +14,7 @@ function Navbar() {
               <Col>
                 <Logo />
               </Col>
-              <Col flex={1} className="pl-6 hidden sm:inline-block">
+              <Col flex={1} className="hidden pl-6 sm:inline-block">
                 <Row justify={"end"}>
                   <SeachBar />
                 </Row>
@@ -27,7 +27,7 @@ function Navbar() {
             </Row>
           </Col>
         </Row>
-        <Row className="sm:hidden mt-8">
+        <Row className="mt-8 sm:hidden">
           <SeachBar />
         </Row>
       </Container>
