@@ -9,6 +9,7 @@ const PATH = {
   cart: "/cart",
   checkout: "/checkout",
   manage: "/manage",
+  dashboard: "/dashboard",
 };
 
 export default PATH;

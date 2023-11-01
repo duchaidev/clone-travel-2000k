@@ -13,6 +13,7 @@ import DefaultLayout from "src/layouts/DefaultLayout";
 import CheckOut from "src/pages/client/Checkout/Checkout";
 import ManageTour from "src/pages/client/ManageTour/ManageTour";
 import ManageLayout from "src/layouts/manage/ManageLayout";
+import Dashboard from "src/pages/client/ManageTour/Dashboard";
 
 const rootRouter: RouteObject[] = [
   {
@@ -92,6 +93,14 @@ const rootRouter: RouteObject[] = [
     element: (
       <ManageLayout>
         <ManageTour />
+      </ManageLayout>
+    )
+  },
+  {
+    path: PATH.dashboard,
+    element: (
+      <ManageLayout>
+        <Dashboard />
       </ManageLayout>
     )
   }
